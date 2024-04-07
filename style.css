@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 20px;
+    background-color: #ffffff;
+}
+/* Header Styles */
+.nav-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.nav-section h3{
+    color: rgb(93, 109, 225);
+}
+/* Meme Generator Styles */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-part {
+    flex-basis: 40%;
+    background-color: #68a0d1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-part {
+    flex-basis: 45%;
+    background-color: #ecfff2;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+#memeform p{
+    color: #f0f0f0;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+input[type="file"],
+input[type="text"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Image Styles */
+.image-section {
+    position: relative;
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgb(235, 0, 0);
+}
+#meme-image {
+    width: 100%;
+    height: 330px;
+    border-radius: 5px;
+}
+#top-head,
+#bottom-head {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(253, 234, 228, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#top-head {
+    top: 10px;
+}
+
+#bottom-head {
+    bottom: 10px;
+}
+
+/* Download Button Styles */
+#btnn {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#btnn:hover {
+    background-color: #555;
+}
+@media (max-width:650px) {
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/kid.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <title>Meme Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav-section">
+            <h3>Meme Generator</h3>
+        </div>
+        <div class="main-section">
+            <div class="content-part">
+                <form id="memeform">
+                    <p>Upload your image, gif or video</p>
+                    <input type="file" id="image" name="file" accept="image/*, video/*" required><br><br>
+                    <input type="text" placeholder="Top Text" id="top" name="fname"><br><br>
+                    <input type="text" placeholder="Bottom Text" id="bottom" name="lname"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="image-part">
+                <div class="image-section">
+                    <img src="./img/kid.png" id="meme-image" alt="Meme Image">
+                    <div id="top-head">Your Text Here</div>
+                    <div id="bottom-head">Your Text Here</div>
+                </div>
+            </div>
+        </div>
+        <button id="btnn">Download</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
